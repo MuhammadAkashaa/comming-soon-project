@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /* line-height: 36px; */
+}
+.content h1 span{
+    color: #ff3753;
+}
+.content h1 {
+    font-size: 60px;
+    font-weight: 600px;
+
+}
+.content p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family:sans-serif ;
+}
+.date{
+    color: #ff3753;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 200;
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px 25px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: 1s ease;
+}
+.content button:hover{
+    color: #fff;
+    background-color: black;
+    transition: 1s ease-in-out;
+    border:2px solid #ff3753;
+
+}
+.content button img{
+    width: 15px;
+    padding-left: 8px;
+}
+.counter{
+    display: flex;
+}
+.counter div{
+    flex-basis: 100px;
+    margin-left: 5px;
+}
+.rocket{
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
